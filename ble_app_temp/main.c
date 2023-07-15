@@ -390,13 +390,6 @@ int main(void)
     //init timer
     
     // do measurement
-    saadc_init();
-    char* msg = (char*)malloc(sizeof(char) * 3);
-    nrf_gpio_cfg_output(10);
-    msg[0] = saadc_read(0, NRF_SAADC_INPUT_AIN0) + 160;
-    msg[1] = saadc_read(1, NRF_SAADC_INPUT_AIN1) + 160;
-    msg[2] = saadc_read(2, NRF_SAADC_INPUT_AIN2) + 160;
-    nrf_gpio_pin_clear(10);
     //lfclk_request();
     ble_stack_init();
     advertising_init(msg);
