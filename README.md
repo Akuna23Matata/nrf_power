@@ -16,7 +16,7 @@ Bluetooth is a compilcated communication protocol that define a veriaty of servi
 ## BLE Beacon Guide
 This Guide will guide you to build a basic BLE beacon using NRF52 Chip that can advertise a data.
 ### First Step
-Download this Github repo to your NRF5 SDK folder as (NRF5 SDK folder)/examples/ble_peripheral. By putting the code in correct folder, the Segger Embedded Studio can find all nessesary dependeces automatically. Believe me you don't want to manually setup these.
+Download this Github repo to your NRF5 SDK folder as ```(NRF5 SDK folder)/examples/ble_peripheral```. By putting the code in correct folder, the Segger Embedded Studio can find all nessesary dependeces automatically. Believe me you don't want to manually setup these.
 ### Second Step
 Nowthat we have everything we need to start programming, we will start to build our first BLE beacon.
 1. Service Init
