@@ -84,3 +84,12 @@ Now that we have already load the message in the BLE stack, and successfully con
 After following the previous steps, you should successfully build your own BLE beacon with costumized messages. Now you can use your smart phone to recieve and read the message. There are a lot of helpful BLE scan tools on either IOS or Andriod platform. Personally I prefer to use ```NRF Connect for Mobile```. This is a powerful BLE scanner with a lot of reference materials. If you want to build your own BLE scanner with some logics, I would recommand use ```Python``` with ```Bleak``` Library. <br/>Please note that Apple will always provide you a fake UUID and MAC address. So please use Windows or Linux OS PC. As I mentioned Apple is doing the conversion internally in hardware, so installing Windows/Linux OS on a Macbook does not solve the problem.
 <br/>Don't forget the endless loop in the main function. The MCU will go to sleep when it reach the end of main function, and the BLE event will be shut down.
 <br/>The BLE event is performed in a different core, so you can always put the device to ```Sleep Mode``` after configuration, this will save a lot of energy.
+## Reference:
+NRF52 softdevice APIs:<br/>
+https://infocenter.nordicsemi.com/topic/com.nordic.infocenter.s132.api.v6.0.0/index.html<br/>
+Bluetooth Core Specifications:<br/>
+https://www.bluetooth.com/specifications/specs/?keyword=core+specification<br/>
+Segger Embedded Studio(Please Note version number when you download):<br/>
+https://www.segger.com/products/development-tools/embedded-studio/<br/>
+NRF5 SDK(Please Note version number when you download):<br/>
+https://www.nordicsemi.com/Products/Development-software/nrf5-sdk
